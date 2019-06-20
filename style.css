@@ -1,14 +1,26 @@
 body {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(/joystix\monospace.ttf);
+}
 body button {
   font-size: 40px;
-  background-color: green;
+  font-family: "joystix", Arial, sans-serif;
+  background-color: #2e3192;
   color: #fff;
   padding: 10px 20px;
   border: 0;
   box-shadow: 0;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+#game-board {
+  position: relative;
+  display: inline-block;
 }

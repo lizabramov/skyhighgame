@@ -1,6 +1,6 @@
 class Laser {
   constructor() {
-    this.x = game.plane.x;
+    this.x = game.plane.x + 64;
     this.y = game.plane.y + 32;
   }
   draw() {

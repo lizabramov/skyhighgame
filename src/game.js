@@ -5,6 +5,7 @@ class Game {
     this.laser = [];
     this.obstacle = [];
     this.rain = [];
+    this.gameover = false;
   }
 
   setup() {
@@ -54,5 +55,10 @@ class Game {
   over() {
     console.log("GAME OVER");
     noLoop();
+    setTimeout(() => {
+      this.gameover = true;
+      loop();
+    }, 1000);
+    // this.gameover = true;
   }
 }

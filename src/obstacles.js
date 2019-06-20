@@ -76,7 +76,6 @@ class Obstacle {
         game.plane.rect.bottom < collisionRect.top
       )
     ) {
-      debugger;
       game.over();
     }
   }
