@@ -53,7 +53,6 @@ class Game {
     // filter the obstacles with neg x
   }
   over() {
-    console.log("GAME OVER");
     noLoop();
     setTimeout(() => {
       this.gameover = true;

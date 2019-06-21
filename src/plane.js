@@ -27,6 +27,9 @@ class Plane {
   moveObject() {
     if (key === " ") {
       game.laser.push(new Laser(this.img.pos));
+      if (!song.isPlaying()) {
+      }
+      song.play();
     } else if (keyCode === 40) {
       this.y += 50;
       // } else if (keyCode === 39) {
