@@ -13,6 +13,7 @@ class Game {
     this.rainimg = loadImage("assets/storm.png");
     this.bg.setup();
     this.plane.setup();
+    this.gameOverPlay = 0;
   }
 
   draw() {

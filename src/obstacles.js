@@ -14,7 +14,6 @@ class Obstacle {
     this.right = this.x + this.rocket.width / 25;
     this.hit = false;
     this.speed = 7;
-    this.gameOverPlay = 0;
   }
 
   draw() {
@@ -77,9 +76,9 @@ class Obstacle {
         game.plane.rect.bottom < collisionRect.top
       )
     ) {
-      this.gameOverPlay++;
+      game.gameOverPlay++;
       game.over();
-      if (this.gameOverPlay === 1) error.play();
+      if (game.gameOverPlay === 1) error.play();
     }
   }
 }
